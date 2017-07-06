@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url(../fonts/ProximaNova/Proxima-Nova-Regular.otf)
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url(../fonts/ProximaNova/Proxima-Nova-Bold.otf)
+}
+
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url(../fonts/ProximaNova/Proxima-Nova-Light.otf)
+}
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Proxima Nova Regular, sans-serif;
+}
+
+.wrapper {
+  flex: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  background: #2f364a;
+}
+
+.sidebar{
+  flex:1;
+  background: #1f2637;
+  color: #78829d;
+  font-family: 'Proxima Nova Regular', serif;
+  font-size: 13px;
+
+  &__item{
+    border-bottom: #19202e solid 6px;
+    box-shadow: inset 0px -1px 0px 0px rgb(20,24,36),
+    inset 0px 1px 0px 0px rgb(40,47,65);
+
+    &:first-child{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 114px;
+    }
+
+    &:last-child{
+      border-bottom: none;
+      box-shadow: inset 0px 1px 0px 0px rgb(40,47,65);
+    }
+
+  }
+
+  &__btn{
+    width: 160px;
+    height: 44px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background: #f2795a;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.main-menu{
+  list-style: none;
+  margin: 0;
+  padding: 0;//скрывает маркер
+  &__link {
+    display: block;
+    padding: 14px 20px 14px 46px;
+    text-decoration: none;
+    color: #78829d;
+
+    &:hover, &:focus {
+      background: #15a4fa;
+      color: white;
+    }
+
+    &_reading:before {
+    }
+  }
+}
+
+.category{
+  margin: 0;
+  padding: 0;//скрывает маркер
+
+  &__link {
+    display: block;
+    padding: 14px 20px 14px 46px;
+    text-decoration: none;
+    color: #78829d;
+
+    &:hover, &:focus {
+      background: #15a4fa;
+      color: white;
+    }
+  }
+}
+
+.history{
+  padding:35px 18px 0 46px;
+  font-size: 12px;
+
+  &__text{
+    display: inline-block;
+    margin-bottom: 18px;
+  }
+  &__time{
+    font-family: 'Proxima Nova Light', sans-serif;
+
+  }
+}
+
+
+.content{
+  display: flex;
+  flex-direction: column;
+  flex: 6;
+  background: #eef1f7;
+}
+
+.footer{
+  display: flex;
+  justify-content: flex-end;
+  background: #181e2c;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+    <div class="header">
+        <div class="header__item">
+            <a class="header__link header__link-help"><span>Help Center</span></a>
+            <a class="header__link header__link-support"><span>Our Support</span></a>
+            <a class="header__link header__link-user"><span>John Doe</span></a>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar__item">
+                <button name="add_book" value="add_book" class="sidebar__btn">Add a book</button>
+            </div>
+
+            <div class="sidebar__item">
+                <ul class="main-menu">
+                    <li><a href="#" class="main-menu__link main-menu__link_reading">Now Reading</a></li>
+                    <li><a href="#" class="main-menu__link main-menu__link_browser">Browse</a></li>
+                    <li><a href="#" class="main-menu__link main-menu__link_buy">Buy Books</a></li>
+                    <li><a href="#" class="main-menu__link main-menu__link_favorite">Favourite Books</a></li>
+                    <li><a href="#" class="main-menu__link main-menu__link_wishlist">Wishlist</a></li>
+                    <li><a href="#" class="main-menu__link main-menu__link_history">History</a></li>
+                </ul>
+
+            </div>
+
+            <div class="sidebar__item">
+                <ul class="category">
+                    <li><a href="#" class="category__link category__link_must">Must Read Titles</a></li>
+                    <li><a href="#" class="category__link category__link_best">Best Of List</a></li>
+                    <li><a href="#" class="category__link category__link_novels">Classic Novels</a></li>
+                    <li><a href="#" class="category__link category__link_non">Non Fiction</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar__item">
+                <div class="history history_first">
+                    <span class="history__text">You added Fight Club by Chuck Palahniuk to your Must Read Title.</span>
+                    <span class="history__time">24 minutes ago</span>
+                </div>
+                <div class="history history_second">
+                    <span class="history__text">You added The Trial by Franz Kafka to your Must Read Titles.</span>
+                    <span class="history__time">48 minutes ago</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content__title">Browse Available Books</div>
+            <div class="content__item">
+                <div class="content__filter">
+                    <a class="filter__link filter__link_all">All Books</a>
+                    <a class="filter__link filter__link_recent">Most Recent</a>
+                    <a class="filter__link filter__link_popular">Most Popular</a>
+                    <a class="filter__link filter__link_free">Free</a>
+                </div>
+                <div class="content__search-form">
+                    <form class="search-form">
+                            <input type="search">
+                    </form>
+                </div>
+            </div>
+            <div class="library"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__btn footer__btn_">a</div>
+        <div class="footer__btn footer__btn_">a</div>
+    </div>
+</body>
+</html>

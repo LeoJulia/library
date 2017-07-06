@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url(../fonts/ProximaNova/Proxima-Nova-Regular.otf); }
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url(../fonts/ProximaNova/Proxima-Nova-Bold.otf); }
+
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url(../fonts/ProximaNova/Proxima-Nova-Light.otf); }
+
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Proxima Nova Regular, sans-serif; }
+
+.wrapper {
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+      -ms-flex: auto;
+          flex: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  background: #2f364a; }
+
+.sidebar {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: #1f2637;
+  color: #78829d;
+  font-family: 'Proxima Nova Regular', serif;
+  font-size: 13px; }
+  .sidebar__item {
+    border-bottom: #19202e solid 6px;
+    -webkit-box-shadow: inset 0px -1px 0px 0px #141824, inset 0px 1px 0px 0px #282f41;
+            box-shadow: inset 0px -1px 0px 0px #141824, inset 0px 1px 0px 0px #282f41; }
+    .sidebar__item:first-child {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 114px; }
+    .sidebar__item:last-child {
+      border-bottom: none;
+      -webkit-box-shadow: inset 0px 1px 0px 0px #282f41;
+              box-shadow: inset 0px 1px 0px 0px #282f41; }
+  .sidebar__btn {
+    width: 160px;
+    height: 44px;
+    border: 0;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    color: white;
+    background: #f2795a;
+    font-family: 'Proxima Nova Bold', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+.main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .main-menu__link {
+    display: block;
+    padding: 14px 20px 14px 46px;
+    text-decoration: none;
+    color: #78829d; }
+    .main-menu__link:hover, .main-menu__link:focus {
+      background: #15a4fa;
+      color: white; }
+
+.category {
+  margin: 0;
+  padding: 0; }
+  .category__link {
+    display: block;
+    padding: 14px 20px 14px 46px;
+    text-decoration: none;
+    color: #78829d; }
+    .category__link:hover, .category__link:focus {
+      background: #15a4fa;
+      color: white; }
+
+.history {
+  padding: 35px 18px 0 46px;
+  font-size: 12px; }
+  .history__text {
+    display: inline-block;
+    margin-bottom: 18px; }
+  .history__time {
+    font-family: 'Proxima Nova Light', sans-serif; }
+
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 6;
+  -webkit-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  background: #eef1f7; }
+
+.footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: #181e2c; }
