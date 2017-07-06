@@ -104,7 +104,7 @@ body {
   padding: 0; }
   .main-menu__link {
     display: block;
-    padding: 14px 20px 14px 46px;
+    padding: 10px 20px 10px 46px;
     text-decoration: none;
     color: #78829d; }
     .main-menu__link:hover, .main-menu__link:focus {
@@ -116,7 +116,7 @@ body {
   padding: 0; }
   .category__link {
     display: block;
-    padding: 14px 20px 14px 46px;
+    padding: 10px 20px 10px 46px;
     text-decoration: none;
     color: #78829d; }
     .category__link:hover, .category__link:focus {
@@ -124,7 +124,7 @@ body {
       color: white; }
 
 .history {
-  padding: 35px 18px 0 46px;
+  padding: 20px 18px 0 46px;
   font-size: 12px; }
   .history__text {
     display: inline-block;
