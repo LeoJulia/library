@@ -10,9 +10,14 @@
 <body>
     <div class="header">
         <div class="header__item">
-            <a class="header__link header__link-help"><span>Help Center</span></a>
-            <a class="header__link header__link-support"><span>Our Support</span></a>
-            <a class="header__link header__link-user"><span>John Doe</span></a>
+            <ul class="header__menu">
+                <li class="header__menu_item"><a href="#" class="header__link header__link-help">Help Center</a></li>
+                <li class="header__menu_item"><a href="#" class="header__link header__link-support">Our Support</a></li>
+                <li class="header__menu_item"> <a href="#" class="header__link header__link-user"><img src="img/avatar.png" class="header__link-user_style">John Doe</a></li>
+            </ul>
+
+
+
         </div>
     </div>
     <div class="wrapper">
@@ -44,11 +49,11 @@
 
             <div class="sidebar__item">
                 <div class="history history_first">
-                    <span class="history__text">You added Fight Club by Chuck Palahniuk to your Must Read Title.</span>
+                    <span class="history__text">You added <span class="history__text_light">Fight Club</span> by <span class="history__text_light">Chuck Palahniuk</span> to your <span class="history__text_light">Must Read Title</span>.</span>
                     <span class="history__time">24 minutes ago</span>
                 </div>
                 <div class="history history_second">
-                    <span class="history__text">You added The Trial by Franz Kafka to your Must Read Titles.</span>
+                    <span class="history__text">You added <span class="history__text_light">The Trial</span> by <span class="history__text_light">Franz Kafka</span> to your <span class="history__text_light">Must Read Titles</span>.</span>
                     <span class="history__time">48 minutes ago</span>
                 </div>
             </div>
@@ -57,15 +62,16 @@
         <div class="content">
             <div class="content__title">Browse Available Books</div>
             <div class="content__item">
-                <div class="content__filter">
-                    <a class="filter__link filter__link_all">All Books</a>
-                    <a class="filter__link filter__link_recent">Most Recent</a>
-                    <a class="filter__link filter__link_popular">Most Popular</a>
-                    <a class="filter__link filter__link_free">Free</a>
-                </div>
+                    <ul class="filter">
+                        <li class="filter__item"><a href="#" class="filter__link filter__link_all">All Books</a></li>
+                        <li class="filter__item"><a href="#"  class="filter__link filter__link_recent">Most Recent</a></li>
+                        <li class="filter__item"><a href="#"  class="filter__link filter__link_popular">Most Popular</a></li>
+                        <li class="filter__item"><a href="#"  class="filter__link filter__link_free">Free</a></li>
+                    </ul>
+
                 <div class="content__search-form">
                     <form class="search-form">
-                            <input type="search">
+                        <input class="search-form_style" type="text" name="search" placeholder="Enter Keywords">
                     </form>
                 </div>
             </div>
@@ -73,8 +79,8 @@
         </div>
     </div>
     <div class="footer">
-        <div class="footer__btn footer__btn_">a</div>
-        <div class="footer__btn footer__btn_">a</div>
+        <div class="footer__btn footer__btn_"><a href="#"></a></div>
+        <div class="footer__btn footer__btn_"><a href="#"></a></div>
     </div>
 </body>
 </html>
