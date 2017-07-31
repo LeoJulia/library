@@ -1,4 +1,7 @@
 @import 'mixin';
+@import "fa_scss/font-awesome";
+@import "variables";
+
 @font-face {
   font-family: 'Proxima Nova Regular';
   src: url(../fonts/ProximaNova/Proxima-Nova-Regular.otf)
@@ -13,6 +16,12 @@
   font-family: 'Proxima Nova Light';
   src: url(../fonts/ProximaNova/Proxima-Nova-Light.otf)
 }
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url(../fonts/FontAwesome.otf);
+}
+
 body{
   display: flex;
   flex-direction: column;
@@ -64,6 +73,14 @@ body{
         left: 22px;
         top: 11px;
       }
+
+      &::after{
+        font-family: FontAwesome, sans-serif;
+        font-size: 14px;
+        position: absolute;
+        right: 42px;
+        content: '\f13a';
+      }
     }
   }
 
@@ -102,48 +119,89 @@ body{
     height: 44px;
     border: 0;
     border-radius: 5px;
-    color: white;
     background: #f2795a;
-    font-family: 'Proxima Nova Bold', sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
     outline: 0;
-  }
 
-  .main-menu{
-    list-style: none;
-    margin: 0;
-    padding: 0;//скрывает маркер
-    &__link {
-      display: block;
-      padding: 13px 20px 13px 46px;
-      text-decoration: none;
-      color: #78829d;
+    &__text{
+      color: white;
+      font-family: 'Proxima Nova Bold', sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: bold;
 
-      &:hover, &:focus {
-        background: #15a4fa;
-        color: white;
-      }
-
-      &_reading:before {
+      &::before{
+        font-family: FontAwesome, sans-serif;
+        content: '+';
+        font-size: 21px;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative;
+        left: -3px;
+        top: 2px;
       }
     }
   }
 
-  .category{
-    margin: 0;
-    padding: 0;//скрывает маркер
-
-    &__link {
+  .main-menu{
+    &__link{
       display: block;
-      padding: 13px 20px 13px 46px;
+      padding: 13px 20px 13px 21px;
       text-decoration: none;
       color: #78829d;
+
+      &::before {
+        font-family: FontAwesome, sans-serif;
+        font-size: 14px;
+        float: left;
+        position: relative;
+        margin-right: 13px;
+      }
 
       &:hover, &:focus {
         background: #15a4fa;
         color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @for $i from 1 through 6 {
+    .main-menu__link:nth-child(#{$i}) {
+        &::before {
+          content: nth($main-nav_icons, $i);
+        }
+      }
+    }
+
+
+  .category{
+    &__link {
+      display: block;
+      padding: 13px 20px 13px 25px;
+      text-decoration: none;
+      color: #78829d;
+
+      &::before {
+        content: "";
+        margin-right: 13px;
+        width: 7px;
+        height: 7px;
+        float: left;
+        border-radius: 50%;
+        position: relative;
+        top: 5px;
+      }
+
+       &:hover, &:focus {
+         background: #15a4fa;
+         color: white;
+       }
+    }
+  }
+  @for $i from 1 through 4{
+    .category__link:nth-child(#{$i}) {
+      &::before{
+        background-color: nth($category-color, $i);
       }
     }
   }
@@ -162,9 +220,15 @@ body{
     &__time{
       font-family: 'Proxima Nova Light', sans-serif;
       color: #545d74;
-      &:last-child{
+    }
 
-      }
+    &::before{
+      font-family: FontAwesome, sans-serif;
+      font-size: 14px;
+      content: '\f017';
+      position: absolute;
+      float: left;
+      left: 22px;
     }
   }
 }
@@ -276,14 +340,29 @@ body{
         color: #6f7d95;
       }
     }
-
-    &__star{
-      font-size: 14px;
-      color: #ffab00;
-    }
   }
 }
 
+.rating{
+  display: flex;
+  justify-content: flex-end;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+
+  &__star{
+    font-size: 14px;
+    color: #ffab00;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    margin-top: 3px;
+
+    &:hover:before, &:hover ~ &:before{
+      font-family: FontAwesome, sans-serif;
+      content: '\f005';
+    }
+  }
+}
 
 
 
@@ -292,13 +371,22 @@ body{
   display: flex;
   justify-content: flex-end;
   background: #181e2c;
+
   &__btn{
-    display: block;
     height: 38px;
     width: 51px;
     background: #1f2637;
-    &:hover, &:focus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #78829d;
+
+    &:hover, &:focus {
       background: #15a4fa;
+      color: white;
+      cursor: pointer;
     }
   }
 }
