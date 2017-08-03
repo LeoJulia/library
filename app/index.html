@@ -11,9 +11,23 @@
     <div class="header">
         <div class="header__item">
             <ul class="header__menu">
-                <li class="header__menu_item"><a href="#" class="header__link header__link-help">Help Center</a></li>
-                <li class="header__menu_item"><a href="#" class="header__link header__link-support">Our Support</a></li>
-                <li class="header__menu_item"> <a href="#" class="header__link header__link-user"><img src="img/avatar.png" class="header__link-user_style">John Doe</a></li>
+                <li class="header__menu_item">
+                    <a href="#" class="header__link">
+                        Help Center
+                    </a>
+                </li>
+                <li class="header__menu_item">
+                    <a href="#" class="header__link">
+                        Our Support
+                    </a>
+                </li>
+                <li class="header__menu_item">
+
+                    <button name="btn-user" class="header__btn-user">
+                        <img src="img/avatar.png" class="header__btn-user-avatar" alt="avatar">
+                        <span class="header__btn-user-text">John Doe</span>
+                    </button>
+                </li>
             </ul>
 
 
@@ -27,32 +41,52 @@
             </div>
 
             <div class="sidebar__item">
-                <div class="main-menu">
-                    <a href="#" class="main-menu__link">Now Reading</a>
-                    <a href="#" class="main-menu__link">Browse</a>
-                    <a href="#" class="main-menu__link">Buy Books</a>
-                    <a href="#" class="main-menu__link">Favourite Books</a>
-                    <a href="#" class="main-menu__link">Wishlist</a>
-                    <a href="#" class="main-menu__link">History</a>
-                </div>
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link">Now Reading</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link">Browse</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link">Buy Books</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link">Favourite Books</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link">Wishlist</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__link">History</a>
+                    </li>
+                </ul>
             </div>
 
             <div class="sidebar__item">
-                <div class="category">
-                    <a href="#" class="category__link">Must Read Titles</a>
-                    <a href="#" class="category__link">Best Of List</a>
-                    <a href="#" class="category__link">Classic Novels</a>
-                    <a href="#" class="category__link">Non Fiction</a>
-                </div>
+                <ul class="category">
+                    <li class="category__item">
+                        <a href="#" class="category__link">Must Read Titles</a>
+                    </li>
+                    <li class="category__item">
+                        <a href="#" class="category__link">Best Of List</a>
+                    </li>
+                    <li class="category__item">
+                        <a href="#" class="category__link">Classic Novels</a>
+                    </li>
+                    <li class="category__item">
+                        <a href="#" class="category__link">Non Fiction</a>
+                    </li>
+                </ul>
             </div>
 
             <div class="sidebar__item">
-                <div class="history history_first">
-                    <span class="history__text">You added <span class="history__text_light">Fight Club</span> by <span class="history__text_light">Chuck Palahniuk</span> to your <span class="history__text_light">Must Read Title</span>.</span>
+                <div class="history">
+                    <span class="history__text">You added <a href='#' class="history__text_link">Fight Club</a> by <a href="#" class="history__text_link">Chuck Palahniuk</a> to your <a href="#" class="history__text_link">Must Read Title</a>.</span>
                     <span class="history__time">24 minutes ago</span>
                 </div>
-                <div class="history history_second">
-                    <span class="history__text">You added <span class="history__text_light">The Trial</span> by <span class="history__text_light">Franz Kafka</span> to your <span class="history__text_light">Must Read Titles</span>.</span>
+                <div class="history">
+                    <span class="history__text">You added <a href='#' class="history__text_link">The Trial</a> by <a href='#' class="history__text_link">Franz Kafka</a> to your <a href='#' class="history__text_link">Must Read Titles</a>.</span>
                     <span class="history__time">48 minutes ago</span>
                 </div>
             </div>
@@ -62,20 +96,29 @@
             <div class="content__title">Browse Available Books</div>
             <div class="content__item">
                     <ul class="filter">
-                        <li class="filter__item"><a href="#" class="filter__link filter__link_all">All Books</a></li>
-                        <li class="filter__item"><a href="#"  class="filter__link filter__link_recent">Most Recent</a></li>
-                        <li class="filter__item"><a href="#"  class="filter__link filter__link_popular">Most Popular</a></li>
-                        <li class="filter__item"><a href="#"  class="filter__link filter__link_free">Free</a></li>
+                        <li class="filter__item">
+                            <a href="#" class="filter__link filter__link_active">All Books</a>
+                        </li>
+                        <li class="filter__item">
+                            <a href="#"  class="filter__link">Most Recent</a>
+                        </li>
+                        <li class="filter__item">
+                            <a href="#"  class="filter__link">Most Popular</a>
+                        </li>
+                        <li class="filter__item">
+                            <a href="#"  class="filter__link">Free Books</a>
+                        </li>
                     </ul>
 
                 <div class="content__search-form">
                     <form class="search-form">
-                        <input class="search-form_style" type="text" name="search" placeholder="Enter Keywords">
+                           <label class="search-form__icon "><input class="search-form_style" type="text" name="search" placeholder="Enter Keywords"> </label>
                     </form>
                 </div>
             </div>
             <div class="library">
-                <div class="library__book library__book-jacket_first">
+                <div class="library__book">
+                    <img src="img/book-01.png" class="library__book__jacket">
                     <span class="library__book-name">Jewels of Nizam</span>
                     <span class="library__book-author">by Geeta Devi</span>
                     <div class="rating">
@@ -86,7 +129,8 @@
                         <span class="rating__star fa fa-star-o"></span>
                     </div>
                 </div>
-                <div class="library__book library__book-jacket_second">
+                <div class="library__book">
+                    <img src="img/book-02.png" class="library__book__jacket">
                     <span class="library__book-name">Cakes & Bakes</span>
                     <span class="library__book-author">by Sanjeev Kapoor</span>
                     <div class="rating">
@@ -97,7 +141,8 @@
                         <span class="rating__star fa fa-star-o"></span>
                     </div>
                 </div>
-                <div class="library__book library__book-jacket_third">
+                <div class="library__book">
+                    <img src="img/book-03.png" class="library__book__jacket">
                     <span class="library__book-name">Jamie’s Kitchen</span>
                     <span class="library__book-author">by Jamie Oliver</span>
                     <div class="rating">
@@ -108,7 +153,8 @@
                         <span class="rating__star fa fa-star-o"></span>
                     </div>
                 </div>
-                <div class="library__book library__book-jacket_fourth">
+                <div class="library__book">
+                    <img src="img/book-04.png" class="library__book__jacket">
                     <span class="library__book-name">Inexpensive Family Meals</span>
                     <span class="library__book-author">by Simon Holst</span>
                     <div class="rating">
@@ -119,7 +165,8 @@
                         <span class="rating__star fa fa-star-o"></span>
                     </div>
                 </div>
-                <div class="library__book library__book-jacket_fifth">
+                <div class="library__book">
+                    <img src="img/book-05.png" class="library__book__jacket">
                     <span class="library__book-name">Paleo Slow Cooking</span>
                     <span class="library__book-author">by Chrissy Gower</span>
                     <div class="rating">
@@ -130,7 +177,8 @@
                         <span class="rating__star fa fa-star-o"></span>
                     </div>
                 </div>
-                <div class="library__book library__book-jacket_sixth">
+                <div class="library__book">
+                    <img src="img/book-06.png" class="library__book__jacket">
                     <span class="library__book-name">Cook Like an Italian</span>
                     <span class="library__book-author">by Tobie Puttock</span>
                     <div class="rating">
@@ -141,7 +189,8 @@
                         <span class="rating__star fa fa-star-o"></span>
                     </div>
                 </div>
-                <div class="library__book library__book-jacket_seventh">
+                <div class="library__book">
+                    <img src="img/book-07.png" class="library__book__jacket">
                     <span class="library__book-name">Suneeta Vaswani</span>
                     <span class="library__book-author">by Geeta Devi</span>
                     <div class="rating">
@@ -152,7 +201,8 @@
                         <span class="rating__star fa fa-star-o"></span>
                     </div>
                 </div>
-                <div class="library__book library__book-jacket_eighth">
+                <div class="library__book">
+                    <img src="img/book-08.png" class="library__book__jacket">
                     <span class="library__book-name">Jamie Does</span>
                     <span class="library__book-author">by Jamie Oliver</span>
                     <div class="rating">
@@ -163,7 +213,8 @@
                         <span class="rating__star fa fa-star-o"></span>
                     </div>
                 </div>
-                <div class="library__book library__book-jacket_ninth">
+                <div class="library__book">
+                    <img src="img/book-09.png" class="library__book__jacket">
                     <span class="library__book-name">Jamie’s italy</span>
                     <span class="library__book-author">by Jamie Oliver</span>
                     <div class="rating">
@@ -174,7 +225,8 @@
                         <span class="rating__star fa fa-star-o"></span>
                     </div>
                 </div>
-                <div class="library__book library__book-jacket_tenth ">
+                <div class="library__book">
+                    <img src="img/book-10.png" class="library__book__jacket">
                     <span class="library__book-name">Vegetables Cookbook</span>
                     <span class="library__book-author">by Matthew Biggs</span>
                     <div class="rating">
@@ -190,8 +242,8 @@
         </div>
     </div>
     <div class="footer">
-        <div class="footer-item"><a href="#" class="footer__btn"><i class="fa fa-question-circle"></i></a></div>
-        <div class="footer-item"><a href="#" class="footer__btn"><i class="fa fa-cog"></i></a></div>
+        <button class="footer__btn"><i class="fa fa-question-circle"></i></button>
+        <button class="footer__btn"><i class="fa fa-cog"></i></button>
     </div>
 </body>
 </html>
